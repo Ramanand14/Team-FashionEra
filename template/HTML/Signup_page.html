@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FashionEra|Signup Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/CSS/style.css')}}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>SignUp</h1>
+      <form action="/Signup_page.html" enctype = "multipart/form-data" method="post">
+	  
+        <div class="txt_field">
+          <input type="text" name="username" required>
+          <span></span>
+          <label>Name</label>
+        </div>
+		
+        <div class="txt_field">
+          <input type="Email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Mobile No.</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Set Username</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Set Password</label>
+        </div>
+        
+          <button type="submit" value="Get Started"><a href="Login_page.html" style="text-decoration: none; color: white;">Get Started</a></button>
+        
+      </form>
+      </div>
+  </body>
+</html>
