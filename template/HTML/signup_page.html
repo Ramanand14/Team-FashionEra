@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FashionEra|Signup Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/CSS/style1.css')}}">
+  </head>
+  <body>
+      {% with messages = get_flashed_messages(with_categories=true) %}  
+         {% if messages %}  
+               {% for message in messages %}  
+                    <p>{{ message }}</p>  
+               {% endfor %}  
+         {% endif %}   
+      {% endwith %} 
+    <div class="center">
+      <h1>SignUp</h1>
+      <form action="{{url_for('signup_page')}}" method="post" enctype = "multipart/form-data">
+	  
+        <div class="txt_field">
+          <input type="text" name = "Name" required>
+           <span></span>
+          <label>Name</label>
+		  
+        </div>
+		
+        <div class="txt_field">
+          <input type="email" name = "Email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="text" name ="Address" required>
+           <span></span>
+          <label>Address</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="date" name ="DOB" required>
+          <span></span>
+          <label></label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="tel" name ="MobileNo" required>
+          <span></span>
+          <label>Mobile No.</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="text" name ="Username" required>
+          <span></span>
+          <label>Set Username</label>
+        </div>
+		
+		<div class="txt_field">
+          <input type="password" name ="password" required>
+          <span></span>
+          <label>Set Password</label>
+        </div>
+        
+		<div class="txt_field">
+          <input type="password" name ="private key" required>
+          <span></span>
+          <label>Private Key</label>
+        </div>
+		
+        <input type="submit" value="Get Started">
+      </form>
+    </div>
+
+  </body>
+</html>
