@@ -1,0 +1,156 @@
+<!Doctype html>
+<html>
+  <head>
+   <title>Fashion Recommendation</title>
+  </head>
+    <body>
+        <p>
+        <span class="fashion">
+            FashionEra</span> <span class="log"><a href="Login_page.html"> Sign out</a>
+            </span>
+        </p>
+        
+        <form action = "main_page" id="upload-file" method = "post" enctype = "multipart/form-data">       
+               <label for="imageUpload" class="browse">
+                   Choose...
+			     </label>
+			     <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg"/>
+                <input type="submit" class="upload" value="Upload">
+        </form>
+	<style>
+     /* Custom Fonts */
+@font-face {
+	font-family: 'PTSans';
+	src: url('fonts/PT-Sans.eot');
+    src: url('fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PT-Sans.woff') format('woff'),
+         url('fonts/PT-Sans.ttf') format('truetype'),
+         url('fonts/PT-Sans.svg#pt_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('fonts/PT-Sans-Bold.eot');
+    src: url('fonts/PPT-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PT-Sans-Bold.woff') format('woff'),
+         url('fonts/PT-Sans-Bold.ttf') format('truetype'),
+         url('fonts/PT-Sans-Bold.svg#pt_sansbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('fonts/PT-Sans-Italic.eot');
+    src: url('fonts/PPT-Sans-Italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PT-Sans-Italic.woff') format('woff'),
+         url('fonts/PT-Sans-Italic.ttf') format('truetype'),
+         url('fonts/PT-Sans-Italic.svg#pt_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('fonts/PT-Sans-BoldItalic.eot');
+    src: url('fonts/PPT-Sans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PT-Sans-BoldItalic.woff') format('woff'),
+         url('fonts/PT-Sans-BoldItalic.ttf') format('truetype'),
+         url('fonts/PT-Sans-BoldItalic.svg#pt_sansbold_italic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+        body{
+            background-image: url(https://cardiffstudentmedia.co.uk/quench/wp-content/uploads/sites/3/2020/07/s-o-c-i-a-l-c-u-t-7KkDiSs5UdQ-unsplash-scaled.jpg);
+            position: relative;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            margin: 0;
+            padding:0;
+        }
+
+        .fashion{
+            position: absolute;
+            color: red;
+            font-size: 40px;
+            font-family: cursive;
+            background-color: rgba(191, 191, 63, 0.1);
+            
+        }
+
+       .log{
+            position: absolute;
+            left: 1180px;
+            color: white;
+            font-size: 20px;
+            background-color: rgba(191, 191, 63, 0.1);
+            width: 6%;
+        }
+      
+        a:link{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: darkgray;
+        }
+        
+        .contact{
+            
+        }
+        input{
+                position: absolute;
+                width: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 5px;
+                border: 2.2px solid grey;
+                font-family: Lato;
+                font-size: 15px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 300;
+        }
+           
+
+         button:hover {
+                background-color: whitesmoke;
+            }
+
+        .browse{
+            top: 470px;
+            left: 570px;
+            background-color: rgba(191, 191, 63, 0.1);
+            border-radius: 12px;
+            border-width: 3px;
+        }
+        .upload{
+            top: 470px;
+            left: 700px;
+            background-color: rgba(191, 191, 63, 0.1);
+            border-radius: 12px;
+            border-width: 3px;
+        }
+        
+        </style>
+    </body>
+        <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "f0e000f8-0350-46fb-b97e-3e6383b82549", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "2ec8424c-5021-4a42-8c94-ef5b7c90ed4b", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+    
+    </html>
