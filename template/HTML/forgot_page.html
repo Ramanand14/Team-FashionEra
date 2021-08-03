@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FashionEra|Login Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/CSS/style1.css')}}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Forgot Password</h1>
+      <form action="{{url_for('forgot_page')}}" method="post" enctype = "multipart/form-data">
+	  
+	  <div class="txt_field">
+          <input type="text" name="Email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+		
+        <div class="txt_field">
+          <input type="password" name="private_key" required>
+          <span></span>
+          <label>Private Key</label>
+        </div>
+
+        <input type="submit" value="Proceed">
+        
+      </form>
+    </div>
+
+  </body>
+</html>
