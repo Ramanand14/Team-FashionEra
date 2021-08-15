@@ -178,6 +178,29 @@ html{
     transform: scale(1.2);
 }
 
+/* 5th row */
+
+.product-center5{
+    position: absolute;
+    top: 310%;
+    left: 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 11rem;
+    margin-bottom: 5rem;
+}
+
+.product{
+    padding-bottom: 1rem;
+    transition: all 50ms ease-in-out;
+}
+.product .img-cover{
+    transition: all 500ms ease-in-out;
+}
+
+.product:hover img{
+    transform: scale(1.2);
+}
 
 
 .btn {
