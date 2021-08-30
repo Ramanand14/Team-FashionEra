@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <!--head tag start-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--link for CSS code-->
+        <title>Fashionera|Profile</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='../static/CSS/style7.css')}}">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <!--head tag end-->
+    
+    <!--body tag start-->
+    <body bgcolor="#EEE2DC">
+        <nav id="navbar">
+            <ul>
+                <li class="logo"><h1 style="font-family: 'Lobster', cursive; color: rgb(238, 9, 85); font-size: 60px;" >Fashion</h1><h1 style="font-family: 'Lobster', cursive; color:white; font-size: 60px;" >Era</h1></li> 
+            </ul>
+        </nav>
+        
+        <section>
+            <div class="container">
+                <div class="header">
+                    <div class="profile-img">
+                        <img src="../../static/Images/{{ img }}.jpg"  width="200" alt="user_picture">
+                    </div>
+
+                    <div class="profile-nav-info">
+                        <h3 class="username"> {{ user }} </h3>
+                    </div>
+                </div>
+
+                <div class="main-bd">
+                    <div class="left-side">
+                        <div class="profile-side">
+                            <p class="name"><i class="fa fa-user"> {{ name }} </i></p><br>
+                            <p class="mobile-no"><i class="fa fa-phone"> {{ phn }} </i></p><br>
+                            <p class="user-mail"><i class="fas fa-envelope"> {{ email }} </i></p><br>
+                            <p class="birth"><i class="fa fa-birthday-cake"> {{ dob }} </i></p><br>
+                            <p class="address"><i class="fa fa-home"> {{ addrs }} </i></p><br>
+                            <p class="pasword"><i class="fa fa-lock"> {{ pwd }}</i></p><br>
+
+                                <div class="profile-btn">
+                                <a href="{{url_for('update_page')}}">
+                                    <button class="edit">
+                                        <i class="fas fa-pen"> Edit </i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </section>                
+ 
+        <!--footer tag start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="#">Our mission</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="footer-col">
+                        <h4>help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="footer-col">
+                        <h4>connect with us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>    
+    <!--footer tag end-->
+        
+    </body>
+    <!--body tag start-->
+
+</html>
